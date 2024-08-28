@@ -25,9 +25,9 @@ packages = ["pip_test"]
 
 [tool.hatch.build.targets.sdist]
 exclude = [
-    "/pip_test/bin",
-    "/pip_test/data",
-    "/db",
+    "pip_test/bin",
+    "pip_test/data",
+    "db",
     "contrib",
     "docs",
     "tests*",
