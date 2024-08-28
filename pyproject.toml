@@ -1,6 +1,6 @@
 [project]
 name = "pip-test"
-version = "0.1.5"
+version = "0.1.6"
 description = "Add your description here"
 authors = [
     { name = "Mikhail V. Zhukov", email = "mikhail.v.zhukov@gmail.com" }
@@ -38,6 +38,15 @@ exclude = [
 
 [tool.setuptools.packages.find]
 exclude = [
+    "bin*",
+    "pip_test.data*",
+    "contrib",
+    "docs",
+    "tests*",
+]
+
+[tool.setuptools.exclude-package-data]
+"*" = [
     "bin*",
     "pip_test.data*",
     "contrib",
