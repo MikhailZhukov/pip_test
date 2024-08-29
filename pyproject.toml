@@ -1,6 +1,6 @@
 [project]
 name = "pip-test"
-version = "0.1.12"
+version = "0.1.13"
 description = "Add your description here"
 authors = [
     { name = "Mikhail V. Zhukov", email = "mikhail.v.zhukov@gmail.com" }
@@ -23,7 +23,7 @@ allow-direct-references = true
 [tool.hatch.build.targets.wheel]
 packages = ["pip_test"]
 exclude = [
-    "pip_test/bin/.*",
+    "pip_test/bin*",
     "pip_test/data/*",
     "db",
     "contrib",
