@@ -1,6 +1,6 @@
 [project]
 name = "pip-test"
-version = "0.1.8"
+version = "0.1.9"
 description = "Add your description here"
 authors = [
     { name = "Mikhail V. Zhukov", email = "mikhail.v.zhukov@gmail.com" }
@@ -27,6 +27,7 @@ packages = ["pip_test"]
 exclude = [
     "bin*",
     "pip_test.data*",
+    "/pip_test/bin",
     "pip_test/bin",
     "pip_test/data",
     "*.txt",
